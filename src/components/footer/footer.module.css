@@ -1,0 +1,46 @@
+.footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footerBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerBox_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footerBox_card_headText {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.footerBox_card_headText_li {
+  color: #777777;
+  margin-top: 10px;
+  margin-left: -30px;
+}
+
+.footerBox_card_headText_li:hover {
+  color: blue;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerBottom_left {
+  font-size: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.footerBottom_right {
+  font-weight: bold;
+}/*# sourceMappingURL=footer.module.css.map */
