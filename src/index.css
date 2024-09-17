@@ -17,6 +17,8 @@ a{
 .header-top{
     padding-top: 15px;
     width: 100%;
+    background: #2A2036;
+    border-bottom: 1px solid gray;
 }
 .header-top .contact-links{
     align-items: center;
@@ -28,6 +30,7 @@ a{
     display: flex;
     align-items: center;
     gap: 40px;
+    color: white;
 }
 .header-top ul{
     display: flex;
@@ -49,15 +52,19 @@ li{
 
 .header-top .icon{
     font-size: 18px;
+    color: white;
 }
 .header-top .tiktok{
     font-size: 16px;
 }
 .header-top ul li span{
     margin-left: 5px;
+    color: white;
+    margin-right: 15px;
 }
 #header .navbar{
-    background-color: #0D6efd !important;
+    background-color: #2A2036 !important;
+    padding: 20px 0;
 }
 #header .navbar a{
     color: white !important;
@@ -207,4 +214,13 @@ li{
     margin-left: auto;
     margin-right: auto;
   }
-  
+
+  .swiper-button-next {
+    color: #2A2036;
+  }
+    .swiper-button-prev {
+    color: #2A2036;
+  }
+  .main-container,.navbar .container,.headerBottomContainer .container,.header-top .container,._footer_yetb7_1 .container{
+    margin: 0px auto !important;
+  }

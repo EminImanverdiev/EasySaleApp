@@ -6,7 +6,7 @@ import { IoCalendarNumber } from "react-icons/io5";
 
 const ProductCard = () => {
   return (
-    <div className="container">
+    <div className="container main-container">
         <div className={style.productCard_container}>
         <div className={style.productCard}>
             <div className={style.productCard_imgBox}>

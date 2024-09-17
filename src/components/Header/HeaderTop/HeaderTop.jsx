@@ -8,11 +8,7 @@ export default function HeaderTop() {
       <div className="container">
          <div className="row">
            <div className="col-lg-6">
-              <div className='contact-num'>Dəstək: (077) 613-59-59</div>
-              <div className="contact-links">
-                 <a href="#"><FaInstagram className='icon'/></a>
-                 <a href="#"><FaTiktok className='icon tiktok'/></a>
-              </div>
+              <div className='contact-num'>Dəstək: (051) 588-89-68</div>
            </div>
            <div className="col-lg-6">
              <ul>

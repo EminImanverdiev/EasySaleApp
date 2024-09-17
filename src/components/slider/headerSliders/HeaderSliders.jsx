@@ -1,10 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import "./headerSlider.css"
-import { Pagination, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { FaCar } from "react-icons/fa";
 import { PiBuildingApartmentFill } from "react-icons/pi";
 import { GiClothes } from "react-icons/gi";

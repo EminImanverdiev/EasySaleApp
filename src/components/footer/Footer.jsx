@@ -1,51 +1,71 @@
-import React from 'react'
-import { FaFacebook } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { RiVisaLine } from "react-icons/ri";
-import { IoCard } from "react-icons/io5";
+import React, { useState } from 'react'
 import style from "./footer.module.css"
+import { FaFacebook,FaPinterest } from "react-icons/fa";
+import { FaXTwitter,FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
+
+    const[email,setEmail]=useState('')
+    const handleClickEmail=(e)=>{
+      setEmail(e.target.value)
+    }
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      console.log("Submitted email:", email);
+  };
   return (
-    <div className="container">
-        <div className={style.footer}>
-        <div className={style.footerBox}>
-            <div className={style.footerBox_card}>
-                <h2 className={style.footerBox_card_headText}>Əlaqə</h2>
-                <ul className={style.footerBox_card_headText_ul}>
-                    <li className={style.footerBox_card_headText_li}>(077) 613-59-59</li>
-                    <li className={style.footerBox_card_headText_li}><FaFacebook/>-Facebook</li>
-                    <li className={style.footerBox_card_headText_li}><FaInstagramSquare/>-Instagram</li>
-                    <li className={style.footerBox_card_headText_li}><FaTelegram/>-Telegram</li>
-                </ul>
+      <div className={style.footer}>
+       <div className="container">
+      <div className={style.footerMain}>
+        <div className={style.footerMain_infoBox}>
+            <p className={style.footerMain_infoBox_title}>Our mission</p>
+            <p className={style.footerMain_infoBox_mainText}>At Multi, we’re dedicated to providing our customers with the highest quality products and
+            services on the market. We take pride in knowing that our products last and that our services 
+            exceed expectations.</p>
+            <em className={style.footerMain_infoBox_mainText}>This is a demonstration store. No orders will be fulfilled.</em>
+        </div>
+        <div className={style.footerMain_Link}>
+            <p className={style.footerMain_title}>Shop</p>
+            <ul className={style.footerMain_Link_ul}>
+                <a href="" className={style.footerMain_Link_ul_links} >Laptop</a>
+                <a href="" className={style.footerMain_Link_ul_links}>PC</a>
+                <a href="" className={style.footerMain_Link_ul_links} >Computer Parts</a>
+                <a href="" className={style.footerMain_Link_ul_links}>Headset</a>
+                <a href="" className={style.footerMain_Link_ul_links}>Acsesories</a>
+            </ul>
+        </div>
+        <div className={style.footerMain_Link}>
+            <p className={style.footerMain_title}>Information</p>
+            <ul className={style.footerMain_Link_ul}>
+                <a href="" className={style.footerMain_Link_ul_links}>Search</a>
+                <a href="" className={style.footerMain_Link_ul_links}>Contack</a>
+                <a href="" className={style.footerMain_Link_ul_links}>About Us</a>
+            </ul>
+        </div>
+        <div className={style.footerMain_login}>
+            <p className={style.footerMain_title}>NewsLetter</p>
+            <div className={style.footerMain_login_inputBox}>
+            <form onSubmit={handleSubmit} className={style.footerMain_login_inputBox}>
+              <input
+                type="email"
+                value={email}
+                required
+                onChange={handleClickEmail}
+                className={style.footerMain_login_inputBox_input}
+                placeholder='Enter your e-mail'
+              />
+            </form>
             </div>
-            <div className={style.footerBox_card}>
-                <h2 className={style.footerBox_card_headText}>Kontakt</h2>
-                <ul className={style.footerBox_card_headText_ul}>
-                    <li className={style.footerBox_card_headText_li}>Şirkət haqqında</li>
-                    <li className={style.footerBox_card_headText_li}>Karyera</li>
-                </ul>
-            </div>
-            <div className={style.footerBox_card}>
-                <h2 className={style.footerBox_card_headText}>Kateqoriyalar</h2>
-                <ul className={style.footerBox_card_headText_ul}>
-                    <li className={style.footerBox_card_headText_li}>Elektronika</li>
-                    <li className={style.footerBox_card_headText_li}>Avtomobil</li>
-                    <li className={style.footerBox_card_headText_li}>Menzil</li>
-                    <li className={style.footerBox_card_headText_li}>Paltar</li>
-                    <li className={style.footerBox_card_headText_li}>Kitab</li>
-                </ul>
+            <p className={style.footerMain_login_text}>Join our newsletter and never miss out on the latest trends and promotions.</p>
+            <div className={style.footerMain_login_contackLogo}>
+                <FaFacebook className={style.footerMain_login_contackLogo_icon} href='https://www.facebook.com/shopify'/>
+                <FaXTwitter className={style.footerMain_login_contackLogo_icon} href='https://www.twitter.com/shopify/'/>
+                <FaPinterest className={style.footerMain_login_contackLogo_icon} href='https://www.pinterest.com/shopify/'/>
+                <FaInstagram className={style.footerMain_login_contackLogo_icon} href='https://www.instagram.com/shopify/'/>
             </div>
         </div>
-        <div className={style.footerBottom}>
-            <div className={style.footerBottom_left}>
-                <RiVisaLine/>
-                <IoCard/>
-            </div>
-            <p className={style.footerBottom_right}>© EasySale 2024</p>
-        </div>
-        </div>
+      </div>
+    </div>
     </div>
   )
 }
