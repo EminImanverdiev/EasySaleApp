@@ -1,0 +1,25 @@
+.contact-main h2{
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -.9px;
+    line-height: 100%;
+    margin: 45px 0;
+    text-align: center;
+    color: #2a2036;
+}
+.contact-main h6{
+    color: #8D94AD;
+    font-size: 20px;
+    margin: 30px 0px;
+}
+.contact-main .contact-box-icon{
+    color: #2a2036;
+    font-size: 16px;
+}
+.contact-main a{
+   color: rgba(30,30,30,.7);
+   display: inline-block;
+   margin-left: 10px;
+}

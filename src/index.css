@@ -3,10 +3,6 @@ a{
     text-decoration: none;
 }
 
-.container{
-    margin:0 108px;
-}
-
 #header{
     display: flex;
     flex-direction: column;
@@ -48,6 +44,10 @@ li{
 
 .navbar{
     width: 100%;
+}
+
+.navbar-brand{
+    cursor: pointer;
 }
 
 .header-top .icon{
@@ -220,7 +220,4 @@ li{
   }
     .swiper-button-prev {
     color: #2A2036;
-  }
-  .main-container,.navbar .container,.headerBottomContainer .container,.header-top .container,._footer_yetb7_1 .container{
-    margin: 0px auto !important;
   }
