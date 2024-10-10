@@ -1,27 +1,22 @@
-import './App.css'
-import AboutPage from './page/about/AboutPage'
-import Contack from './page/about/Contack'
-import Faq from './page/about/Faq'
-import Info from './page/about/Info'
-import Rules from './page/about/Rules'
-import TermCondition from './page/about/TermCondition'
-import Main from './page/main/Main'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
+import Main from "./page/main/Main"
+import ComponentsPage from "./components/componentsPage/ComponentsPage"
+import ComponentsAdd from "./components/componentsAdd/ComponentsAdd"
+import Login from "./page/login/Login"
+import UserInfo from "./components/userInfo/UserInfo"
 
 function App() {
 
   return (
     <>
     <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Main/>}/>
-      <Route path='/about' element={<AboutPage/>}/>
-      <Route path='/info' element={<Info/>}/>
-      <Route path='/rules' element={<Rules/>}/>
-      <Route path='/termcondition' element={<TermCondition/>}/>
-      <Route path='/faq' element={<Faq/>}/>
-      <Route path='/contack' element={<Contack/>}/>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Main/>}/>
+        <Route path="/category" element={<ComponentsPage/>}/>
+        <Route path="/componentsAdd" element={<ComponentsAdd/>}/>
+        <Route path="/userInfo" element={<UserInfo/>}/>
+        <Route path="/login" element={<Login/>}/>
+      </Routes>
     </BrowserRouter>
     </>
   )

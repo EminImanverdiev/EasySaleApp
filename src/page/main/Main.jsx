@@ -1,18 +1,14 @@
 import React from 'react'
-import Footer from '../../layout/footer/Footer'
-import Header from '../../layout/Header/Header'
-import ProductCard from '../../components/productCard/ProductCard'
-import DetailPage from '../detailPage/DetailPage'
+import Header from '../../components/header/header'
+import MainElement from '../../components/mainElement/MainElement'
 
-const Main = () => {
+const MAinPage = () => {
   return (
     <div>
-    {/* <Header/>
-     <ProductCard/>
-     <Footer/> */}
-     <DetailPage/>
+      <Header/>
+      <MainElement/>
     </div>
   )
 }
 
-export default Main
+export default MAinPage
